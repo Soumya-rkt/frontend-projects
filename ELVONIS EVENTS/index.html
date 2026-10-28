@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="MyScript.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid rgb(64, 56, 6);
+
+            img {
+                width: 200px;
+                height: 200px;
+                margin-top: 10px;
+            }
+
+            h2 {
+                color: gold;
+                margin-top: 20px;
+                letter-spacing: 5px;
+            }
+
+            p {
+                color: rgb(139, 21, 21);
+                font-size: small;
+                letter-spacing: 2px;
+                margin-bottom: 15px;
+                padding: 8px;
+            }
+        }
+
+        .Card {
+            background-color: rgb(20, 18, 18);
+            border: 1px solid rgb(166, 145, 22);
+            border-radius: 10px;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: auto;
+            margin-top: 55px;
+            width: 85%;
+
+            .gala {
+                h3 {
+                    padding: 20px;
+                    color: goldenrod;
+                }
+
+                h1 {
+                    color: gold;
+                }
+
+                P {
+                    padding: 15px;
+                    color: gray;
+                    line-height: 25px;
+                    border-bottom: 1px solid rgb(64, 56, 6);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .edetails {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 25px;
+            margin-bottom: 40px;
+
+
+            p {
+                margin-bottom: 8px;
+                color: rgb(139, 21, 21);
+            }
+
+
+
+
+        }
+
+        .pgd {
+            border-top: 1px solid rgb(64, 56, 6);
+            padding: 20px;
+
+            p {
+                margin-top: 10px;
+                padding: 20px;
+                color: rgb(109, 106, 88);
+
+            }
+
+            .p {
+                color: gold;
+                font-style: italic;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px;
+                background-color: rgb(158, 20, 20);
+                border: none;
+                border-radius: 10px;
+                color: white;
+
+                &:hover {
+                    background-color: gold;
+                    color: black;
+                }
+            }
+
+        }
+
+        footer {
+            color: rgb(109, 106, 88);
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/Elvonis Luxury Gold and Crimson Emblem.png" alt="Elvonis">
+        <h2>ELVONIS EVENTS</h2>
+        <p>WHERE DREAMS MEET REALITY</p>
+    </header>
+
+    <section class="Card">
+
+        <div class="gala">
+            <h3>YOU ARE CORDIALLY INVITED TO</h3>
+            <h1>THE ELVONIS GALA</h1>
+            <h3>An Exclusive Evening of Elegance</h3>
+            <p>Join us for a prestigious evening filled with elegance, celebration and unforgettable memories. Your
+                presence will make this occasion special</p>
+        </div>
+
+        <div class="edetails">
+            <div>
+                <p>EVENT DATE</p>
+                <h3>December 25, 2026</h3>
+            </div>
+
+            <div>
+                <p>EVENT TIME</p>
+                <h3>7:00 PM Onwards</h3>
+            </div>
+
+            <div>
+                <p>VENUE</p>
+                <h3>The Grand Palace</h3>
+            </div>
+
+            <div>
+                <p>DRESS CODE</p>
+                <h3>Black Tie</h3>
+            </div>
+        </div>
+
+        <div class="pgd">
+            <p class="p">Your presence is our greatest honour.</p>
+            <button onclick="invitation()">RESPOND TO INVITATION</button>
+            <p>BY INVITATION ONLY · STRICTLY VIP</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 ELVONIS Events | Private Celebration</p>
+    </footer>
+
+</body>
+
+</html>
